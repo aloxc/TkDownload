@@ -31,7 +31,7 @@ namespace TkDownload
         {
             this.urlTextBox = new System.Windows.Forms.TextBox();
             this.downloadButton = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.logBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // urlTextBox
@@ -52,20 +52,20 @@ namespace TkDownload
             this.downloadButton.UseVisualStyleBackColor = true;
             this.downloadButton.Click += new System.EventHandler(this.downloadButton_Click);
             // 
-            // richTextBox1
+            // logBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(366, 40);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(422, 398);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.logBox.Location = new System.Drawing.Point(366, 40);
+            this.logBox.Name = "logBox";
+            this.logBox.Size = new System.Drawing.Size(422, 398);
+            this.logBox.TabIndex = 2;
+            this.logBox.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.logBox);
             this.Controls.Add(this.downloadButton);
             this.Controls.Add(this.urlTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -82,7 +82,7 @@ namespace TkDownload
 
         private System.Windows.Forms.TextBox urlTextBox;
         private System.Windows.Forms.Button downloadButton;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox logBox;
     }
 }
 

@@ -27,6 +27,10 @@ namespace TkDownload
             }
             urls = u.Split("\n");
             MessageBox.Show("" + urls.Length);
+            foreach (string url in urls)
+            {
+                this.logBox.Text += url + "\n";
+            }
 
         }
     }
